@@ -1,0 +1,35 @@
+GET http://localhost:5001/api/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MSwidXNlcm5hbWUiOiJhdmVnYSIsImVtYWlsIjoiYXZlZ2FAZW1haWwuY29tIn0sImlhdCI6MTc5MzgxOTcwMSwiZXhwIjoxNzkzODIwNjAxfQ.oxfrwtAu5NKZTrEaSyD-KKL3Vy17AXT-KdK7sTpI848
+###
+POST http://localhost:5001/api/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MSwidXNlcm5hbWUiOiJhdmVnYSIsImVtYWlsIjoiYXZlZ2FAZW1haWwuY29tIn0sImlhdCI6MTc5MzgxOTcwMSwiZXhwIjoxNzkzODIwNjAxfQ.oxfrwtAu5NKZTrEaSyD-KKL3Vy17AXT-KdK7sTpI848
+content-type: application/json
+
+{
+    "name": "John Doe", 
+    "email": "jdoe@email.com", 
+    "phone": "222-222-2222"
+}
+###
+GET http://localhost:5001/api/contacts/07
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MSwidXNlcm5hbWUiOiJhdmVnYSIsImVtYWlsIjoiYXZlZ2FAZW1haWwuY29tIn0sImlhdCI6MTc5MzgxOTcwMSwiZXhwIjoxNzkzODIwNjAxfQ.oxfrwtAu5NKZTrEaSyD-KKL3Vy17AXT-KdK7sTpI848
+###
+POST http://localhost:5001/api/users/register
+content-type: application/json
+
+{
+    "username": "avega", 
+    "email": "avega@email.com", 
+    "password": "avega12345"
+}
+###
+POST http://localhost:5001/api/users/login
+content-type: application/json
+
+{
+    "email": "avega@email.com", 
+    "password": "avega12345"
+}
+###
+GET http://localhost:5001/api/users/current
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo1MSwidXNlcm5hbWUiOiJhdmVnYSIsImVtYWlsIjoiYXZlZ2FAZW1haWwuY29tIn0sImlhdCI6MTc5MzgxOTcwMSwiZXhwIjoxNzkzODIwNjAxfQ.oxfrwtAu5NKZTrEaSyD-KKL3Vy17AXT-KdK7sTpI848
